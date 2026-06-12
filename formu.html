@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --surface: rgba(15, 23, 42, 0.96);
+            --accent: #38bdf8;
+            --text: #e2e8f0;
+            --muted: #94a3b8;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(180deg, #020617 0%, #0f172a 100%);
+            color: var(--text);
+            display: grid;
+            place-items: center;
+            padding: 24px;
+        }
+
+        .card {
+            width: min(760px, 100%);
+            background: var(--surface);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 32px;
+            box-shadow: 0 28px 55px rgba(0, 0, 0, 0.28);
+        }
+
+        h1 {
+            margin: 0 0 16px;
+            font-size: clamp(2rem, 3vw, 2.6rem);
+            letter-spacing: -0.04em;
+        }
+
+        p {
+            margin: 0 0 24px;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        form {
+            display: grid;
+            gap: 18px;
+        }
+
+        label {
+            display: grid;
+            gap: 8px;
+            font-weight: 600;
+            color: #dbeafe;
+        }
+
+        input[type="text"], input[type="password"], input[type="file"], button {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 14px;
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text);
+            font-size: 0.98rem;
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+            transform: scale(1.2);
+            margin-right: 10px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        .field {
+            flex: 1 1 220px;
+            min-width: 220px;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background: linear-gradient(135deg, #3b82f6, #14b8a6);
+            color: white;
+            font-weight: 700;
+            transition: transform 0.2s ease, filter 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.05);
+        }
+
+        .author {
+            margin-top: 26px;
+            color: var(--muted);
+            font-size: 0.95rem;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <section class="card">
+        <h1>Formularios</h1>
+        <p>Ejemplo de formulario con campos de texto, contraseña, opciones y archivo. El diseño está hecho para verse moderno y limpio.</p>
+        <form>
+            <label class="field">Nombre
+                <input type="text" placeholder="Escribe tu nombre">
+            </label>
+            <label class="field">Apellidos
+                <input type="text" placeholder="Escribe tus apellidos">
+            </label>
+            <label class="field">Contraseña
+                <input type="password" placeholder="Escribe una contraseña">
+            </label>
+            <div class="row">
+                <label class="field"><span><input type="checkbox"> Acepto términos</span></label>
+                <label class="field"><span><input type="radio" name="opcion"> Opción 1</span></label>
+            </div>
+            <label class="field">Seleccionar archivo
+                <input type="file">
+            </label>
+            <button type="submit">Enviar formulario</button>
+        </form>
+        <p class="author">Autor: Alejandro Rodriguez</p>
+    </section>
+</body>
+</html>

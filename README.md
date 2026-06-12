@@ -1,2 +1,2 @@
-# luis-alejandro-rodriguez-papeador
-para implementa es esto equidededede
+# alejandro-rodriguez.github.io
+tareas y la mamada

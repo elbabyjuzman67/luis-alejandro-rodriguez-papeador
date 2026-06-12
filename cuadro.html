@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadro comparativo: HTML vs CSS</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #0b1220 0%, #121b33 100%);
+            color: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            padding: 28px;
+        }
+
+        .card {
+            width: min(900px, 100%);
+            background: rgba(15, 23, 42, 0.96);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 28px;
+            padding: 32px;
+            box-shadow: 0 28px 60px rgba(0, 0, 0, 0.28);
+        }
+
+        h1 {
+            margin: 0 0 18px;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 320px;
+        }
+
+        th, td {
+            padding: 18px 14px;
+            border: 1px solid rgba(148, 163, 184, 0.16);
+            text-align: left;
+        }
+
+        th {
+            background: rgba(56, 189, 248, 0.18);
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        td {
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        tbody tr:hover td {
+            background: rgba(56, 189, 248, 0.08);
+        }
+
+        .author {
+            margin-top: 20px;
+            color: #94a3b8;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <section class="card">
+        <h1>Cuadro comparativo: HTML vs CSS</h1>
+        <table>
+            <tr>
+                <th>Aspecto</th>
+                <th>HTML</th>
+                <th>CSS</th>
+            </tr>
+            <tr>
+                <td>Definición</td>
+                <td>Lenguaje de marcado para crear la estructura de una página web.</td>
+                <td>Lenguaje de estilos para dar apariencia y diseño al contenido.</td>
+            </tr>
+            <tr>
+                <td>Función principal</td>
+                <td>Crear contenido y estructura.</td>
+                <td>Estilizar y presentar el contenido.</td>
+            </tr>
+            <tr>
+                <td>Extensión</td>
+                <td>.html</td>
+                <td>.css</td>
+            </tr>
+            <tr>
+                <td>Elementos</td>
+                <td>Etiquetas como &lt;p&gt;, &lt;div&gt;, &lt;h1&gt;, &lt;img&gt;.</td>
+                <td>Propiedades como color, font-size, margin, padding.</td>
+            </tr>
+            <tr>
+                <td>Importancia</td>
+                <td>Esencial para la estructura de la web.</td>
+                <td>Hace que la página se vea atractiva y fácil de usar.</td>
+            </tr>
+            <tr>
+                <td>Tipo de lenguaje</td>
+                <td>Lenguaje de marcado.</td>
+                <td>Lenguaje de hojas de estilo.</td>
+            </tr>
+        </table>
+        <p class="author">Autor: Alejandro Rodriguez</p>
+    </section>
+</body>
+</html>

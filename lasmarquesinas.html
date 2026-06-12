@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de marquesinas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #020617;
+            --surface: rgba(15, 23, 42, 0.95);
+            --text: #e2e8f0;
+            --accent: #38bdf8;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Poppins', system-ui, sans-serif;
+            background: radial-gradient(circle at top center, rgba(56, 189, 248, 0.12), transparent 30%),
+                        linear-gradient(180deg, #020617 0%, #0f172a 100%);
+            color: var(--text);
+            padding: 28px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--surface);
+            padding: 32px;
+            border-radius: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 28px 70px rgba(0, 0, 0, 0.28);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: #ffffff;
+        }
+
+        h2 {
+            margin: 24px 0 12px;
+            color: #cbd5e1;
+            font-size: 1.2rem;
+        }
+
+        .marq {
+            display: block;
+            padding: 16px 18px;
+            border-radius: 16px;
+            background: rgba(56, 189, 248, 0.18);
+            color: #f8fafc;
+            border: 1px solid rgba(56, 189, 248, 0.24);
+            margin-bottom: 16px;
+        }
+
+        .images {
+            padding: 16px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.06);
+            margin-bottom: 20px;
+        }
+
+        .images div {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .images img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 14px;
+            border: 2px solid rgba(255, 255, 255, 0.14);
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .video-wrapper {
+            margin-top: 16px;
+            display: grid;
+            place-items: center;
+        }
+
+        .video-wrapper iframe {
+            width: 100%;
+            max-width: 720px;
+            border-radius: 18px;
+            border: 0;
+        }
+
+        .author {
+            margin-top: 26px;
+            text-align: right;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ejemplos de marquesinas</h1>
+        </header>
+        <h2>Marquesina horizontal</h2>
+        <marquee class="marq" scrollamount="6">
+            Marquesina de izquierda a derecha
+        </marquee>
+
+        <h2>Marquesina derecha a izquierda</h2>
+        <marquee class="marq" direction="right" scrollamount="6">
+            Marquesina de derecha a izquierda
+        </marquee>
+
+        <h2>Marquesina vertical</h2>
+        <marquee class="marq" direction="up" scrollamount="3" style="line-height:1.6;">
+            Marquesina que sube <br>
+            Hola <br>
+            Hola <br>
+            Hola <br>
+            Arriba las chivas <br>
+        </marquee>
+
+        <h2>Marquesina con rebote</h2>
+        <marquee class="marq" behavior="alternate" scrollamount="10">
+            Marquesina con rebote
+        </marquee>
+
+        <h2>Marquesina de imágenes</h2>
+        <marquee class="images" behavior="alternate" scrollamount="6">
+            <div>
+                <h3 style="margin:0;color:#e2e8f0;">Imágenes divertidas</h3>
+                <img src="homero.png" alt="Homero">
+                <img src="Fernanfloo_y_Super_Sonico.webp" alt="Fernanfloo">
+                <img src="blue-glossy-ball-png.webp" alt="Blue ball">
+            </div>
+        </marquee>
+
+        <h2>Marquesina con enlaces</h2>
+        <marquee class="marq" scrollamount="6">
+            <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA" target="_blank" rel="noreferrer">Canal de Mr.Beast</a>
+            ·
+            <a href="https://callofduty.fandom.com/es/wiki/Call_of_Duty_Wiki" target="_blank" rel="noreferrer">Wiki de Call of Duty</a>
+            ·
+            <a href="https://godofwar.fandom.com/es/wiki/God_of_War_Wiki" target="_blank" rel="noreferrer">Wiki de God of War</a>
+        </marquee>
+
+        <h2>Video musical</h2>
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TODO" title="Video musical" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <p class="author">Autor: Alejandro Rodriguez</p>
+    </div>
+</body>
+</html>

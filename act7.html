@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 7 - Multimedia</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(180deg, #020617 0%, #111827 100%);
+            color: #e2e8f0;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+        }
+
+        .page {
+            width: min(980px, 100%);
+            background: rgba(15, 23, 42, 0.96);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 28px;
+            padding: 32px;
+            box-shadow: 0 28px 80px rgba(0, 0, 0, 0.3);
+        }
+
+        header {
+            margin-bottom: 26px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2rem, 4vw, 3rem);
+        }
+
+        p {
+            color: #94a3b8;
+            line-height: 1.8;
+            margin-top: 12px;
+        }
+
+        .content {
+            display: grid;
+            gap: 24px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 24px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .card img {
+            width: 100%;
+            max-width: 720px;
+            border-radius: 18px;
+            display: block;
+            margin-top: 16px;
+        }
+
+        .card iframe {
+            width: 100%;
+            min-height: 320px;
+            border-radius: 18px;
+            border: none;
+            background: #000;
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        .author {
+            margin-top: 18px;
+            color: #94a3b8;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <article class="page">
+        <header>
+            <h1>Actividad 7 - Multimedia</h1>
+            <p>Ejemplo con imagen, video y enlaces que muestra cómo organizar contenido de manera clara y moderna.</p>
+        </header>
+
+        <div class="content">
+            <section class="card">
+                <h2>Imagen destacada</h2>
+                <p>Esta imagen de ejemplo se usa para ilustrar cómo se puede mostrar contenido multimedia en una página escolar.</p>
+                <img src="https://static.wixstatic.com/media/fbfe21_a82a1a73ec8148688d77533a86c366cc~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" alt="Foto de un cuyo">
+            </section>
+
+            <section class="card">
+                <h2>Video histórico</h2>
+                <p>El primer video de YouTube se puede ver dentro de un iframe protegido para que el diseño se mantenga ordenado.</p>
+                <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw?si=gQlquvht9FFLXZsH" title="Primer video de YouTube" allowfullscreen></iframe>
+            </section>
+
+            <section class="card">
+                <h2>Enlaces útiles</h2>
+                <p>Visita canales o contenidos relacionados para aprender más. Un buen enlace refuerza el diseño y el propósito de la página.</p>
+                <p><a href="https://www.youtube.com/@MrBeast" target="_blank" rel="noreferrer">Canal de MrBeast</a></p>
+                <p>Y aquí hay un GIF divertido que da vida a la página:</p>
+                <img src="https://media.tenor.com/AhShX4s-guwAAAAj/vibing-rainbow.gif" alt="GIF vibrante">
+            </section>
+        </div>
+
+        <p class="author">Autor: Alejandro Rodriguez</p>
+    </article>
+</body>
+</html>
